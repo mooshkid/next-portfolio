@@ -9,7 +9,7 @@ import { Link } from "@chakra-ui/next-js";
 const Hero = () => {
   return (
     <Container maxW={"7xl"} mx={"auto"}>
-      <Stack id="hero" minH={{ md: "90vh"}} justify={"center"}>
+      <Stack id="hero" minH={{ md: "70vh"}} justify={"center"}>
         <Flex align={"center"} justify={"center"} mx={"auto"} direction={{ base: "column", md: "row" }}>
           <Flex flex={1} order={{ base:"1", md: "2"}}>
             <Image

@@ -19,8 +19,7 @@ const NavBar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <header>
-      {/* <Flex bg={useColorModeValue("white", "red")} justify={"space-between"} alignItems={"center"}> */}
+    <Box as="header" py={4}>
       <Flex justify={"space-between"} alignItems={"center"}>
         <Box>
           <Link href={"/"}>
@@ -46,7 +45,7 @@ const NavBar = () => {
           </Button>
         </ButtonGroup>
       </Flex>
-    </header>
+    </Box>
   );
 };
 

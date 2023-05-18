@@ -7,9 +7,10 @@
 - √ Would you like to customize the default import alias? ... No
 
 
-### modules
+## modules
 npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
 
 npm install @chakra-ui/next-js
 npm install @chakra-ui/icons
 npm install @emotion/react
+npm install --save-dev sass

@@ -1,5 +1,5 @@
 import NavBar from "./components/Navbar";
-// import "./globals.css";
+import "./styles/scss/main.scss";
 import { Poppins } from "next/font/google";
 import { Providers } from "./providers";
 

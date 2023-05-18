@@ -43,9 +43,9 @@ const Hero = () => {
         <Flex align={"center"} justify={"center"} mx={"auto"} direction={{ base: "column", md: "row" }}>
           <Flex flex={1} order={{ base:"1", md: "2"}}>
             <Image
-              src={"https://mooshkid.github.io/assets/slark_icon.png"}
+              src="https://mooshkid.github.io/assets/slark_icon.png"
               alt="hero image"
-              width={500}
+              width={500} // is this even working? check later
               height={300}
             />
           </Flex>

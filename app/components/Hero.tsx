@@ -7,12 +7,7 @@ import { Container, Flex, Heading, Stack, Text, useColorModeValue } from "@chakr
 import { Link } from "@chakra-ui/next-js";
 
 
-interface CtaButton {
-  text: string;
-  link: string;
-}
-
-const cta: CtaButton[] = [
+const cta = [
   {
     text: "GitHub",
     link: "https://github.com/mooshkid/"
@@ -23,6 +18,23 @@ const cta: CtaButton[] = [
   },
 ]
 
+function generateLinks() {
+  return cta.map((item, index) => (
+    <Link
+      key={index}
+      href={item.link}
+      target="_blank"
+      boxShadow={useColorModeValue("0 0 5px #f9cb28", "0 0 5px #007cf0")}
+      p="5px 10px"
+      borderRadius="5px"
+      border="1px"
+      borderColor={useColorModeValue("#ff4d4d", "white")}
+      sx={{ _hover: { textDecoration: "none" } }}
+    >
+      {item.text}
+    </Link>
+  ));
+}
 
 const Hero = () => {
   return (
@@ -54,23 +66,7 @@ const Hero = () => {
                 GitHub
               </Link> */}
               {/* map to here  */}
-              
-              {cta.map((button, index) => (
-                <Link
-                  href={button.link}
-                  target="_blank"
-                  boxShadow={useColorModeValue("0 0 5px #f9cb28", "0 0 5px #007cf0")}
-                  p="5px 10px"
-                  borderRadius="5px"
-                  border="1px"
-                  borderColor={useColorModeValue("#ff4d4d", "white")}
-                  sx={{_hover: {textDecoration: "none"}}}
-                  key={index}
-                >
-                  {button.text}
-                </Link>
-              ))}
-
+              {generateLinks()}
             </Stack>
           </Stack>
 

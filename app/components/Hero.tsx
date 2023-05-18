@@ -6,6 +6,24 @@ import { Container, Flex, Heading, Stack, Text, useColorModeValue } from "@chakr
 // import Link from "next/link";
 import { Link } from "@chakra-ui/next-js";
 
+
+interface CtaButton {
+  text: string;
+  link: string;
+}
+
+const cta: CtaButton[] = [
+  {
+    text: "GitHub",
+    link: "https://github.com/mooshkid/"
+  },
+  {
+    text: "Resume",
+    link: "#",
+  },
+]
+
+
 const Hero = () => {
   return (
     <Container maxW={"7xl"} mx={"auto"}>
@@ -31,14 +49,27 @@ const Hero = () => {
             <Stack direction="row" spacing="4">
 
               {/* make this part a map  */}
-              <Link href="" boxShadow={useColorModeValue("0 0 5px #f9cb28", "0 0 5px #007cf0")} p="5px 10px" borderRadius="5px" border="1px" borderColor={useColorModeValue("#ff4d4d", "white")}>Resume</Link>
-              <Link href="https://github.com/mooshkid/" target="_blank" boxShadow={useColorModeValue("0 0 5px #f9cb28", "0 0 5px #007cf0")} p="5px 10px" borderRadius="5px" border="1px" borderColor={useColorModeValue("#ff4d4d", "white")}>
+              {/* <Link href="" target="_blank" boxShadow={useColorModeValue("0 0 5px #f9cb28", "0 0 5px #007cf0")} p="5px 10px" borderRadius="5px" border="1px" borderColor={useColorModeValue("#ff4d4d", "white")} sx={{_hover: {textDecoration: "none"}}}>Resume</Link>
+              <Link href="https://github.com/mooshkid/" target="_blank" boxShadow={useColorModeValue("0 0 5px #f9cb28", "0 0 5px #007cf0")} p="5px 10px" borderRadius="5px" border="1px" borderColor={useColorModeValue("#ff4d4d", "white")} sx={{_hover: {textDecoration: "none"}}}>
                 GitHub
-              </Link>
-              <Link href="" boxShadow={useColorModeValue("0 0 5px #f9cb28", "0 0 5px #007cf0")} p="5px 10px" borderRadius="5px" border="1px" borderColor={useColorModeValue("#ff4d4d", "white")}>
-                Coffee
-              </Link>
+              </Link> */}
               {/* map to here  */}
+              
+              {cta.map((button, index) => (
+                <Link
+                  href={button.link}
+                  target="_blank"
+                  boxShadow={useColorModeValue("0 0 5px #f9cb28", "0 0 5px #007cf0")}
+                  p="5px 10px"
+                  borderRadius="5px"
+                  border="1px"
+                  borderColor={useColorModeValue("#ff4d4d", "white")}
+                  sx={{_hover: {textDecoration: "none"}}}
+                  key={index}
+                >
+                  {button.text}
+                </Link>
+              ))}
 
             </Stack>
           </Stack>

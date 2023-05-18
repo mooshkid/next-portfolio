@@ -19,6 +19,11 @@ const styles = {
       color: mode('gray.900', 'whiteAlpha.900')(props),
       bg: mode('white', 'black')(props),
     },
+    a: {
+      _hover: {
+        textDecoration: 'none',
+      }
+    },
   }),
 };
 

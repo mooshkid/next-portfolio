@@ -43,7 +43,7 @@ const NavBar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Box as="header" py={4}>
+    <Box as="header" py="4" maxW="7xl" mx="auto">
       <Flex justify="space-between" alignItems="center">
         <Box>
           <Link href="/">

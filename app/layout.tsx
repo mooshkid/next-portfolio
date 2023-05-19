@@ -1,3 +1,5 @@
+'use client';
+
 import NavBar from "./components/Navbar";
 import "./styles/scss/main.scss";
 import { Poppins } from "next/font/google";

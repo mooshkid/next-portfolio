@@ -18,20 +18,20 @@ import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 type Page = {
   name: string;
-  url: string;
+  path: string;
 };
 
-const data: Page[] = [
-  { name: 'About', url: '/about' },
-  { name: 'Projects', url: '/projects' },
-  { name: 'Contact', url: '/contact' },
+const routes: Page[] = [
+  { name: 'About', path: '/about' },
+  { name: 'Projects', path: '/projects' },
+  { name: 'Contact', path: '/contact' },
 ];
 
 const Pages = () => {
   return (
     <>
-      {data.map((item, index) => (
-        <Link key={index} href={item.url} _hover={{ textDecoration: "none"}}>
+      {routes.map((item, index) => (
+        <Link key={index} href={item.path} _hover={{ textDecoration: "none"}}>
           {item.name}
         </Link>
       ))}

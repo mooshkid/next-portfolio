@@ -5,12 +5,10 @@ import {
   Button,
   ButtonGroup,
   Flex,
-  Text,
   useColorMode,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import Image from "next/image";
-// import Link from "next/link";
+import NextLink from "next/link";
 import { Link } from "@chakra-ui/next-js";
 import React from "react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
@@ -31,7 +29,7 @@ const Pages = () => {
   return (
     <>
       {routes.map((item, index) => (
-        <Link key={index} href={item.path} _hover={{ textDecoration: "none"}}>
+        <Link as={NextLink} key={index} href={item.path} _hover={{ textDecoration: "none"}}>
           {item.name}
         </Link>
       ))}
@@ -56,9 +54,6 @@ const NavBar = () => {
           </Link>
         </Box>
         <Flex className="nav_list" gap="4">
-          {/* <Link p="5px 10px" href="/about">About</Link>
-          <Link p="5px 10px" href="/projects">Projects</Link>
-          <Link p="5px 10px" href="/contact">Contact</Link> */}
           <Pages />
         </Flex>
         <ButtonGroup>

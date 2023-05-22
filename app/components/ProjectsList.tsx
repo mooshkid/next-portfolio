@@ -53,7 +53,7 @@ function ProjectsList() {
             border="1px"
             borderRadius="5px"
             borderColor="gray.300"
-            _dark={{ color: "gray.800" }}
+            _dark={{ borderColor: "gray.800" }}
             shadow="2xl"
             overflow="hidden"
           >

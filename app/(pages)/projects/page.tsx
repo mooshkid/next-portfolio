@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <main>
       <Container maxW="6xl" mx="auto">
-        <Box py="8" borderBottom="1px" borderColor={useColorModeValue("gray.300", "gray.800")}>
+        <Box py="8" borderBottom="1px" borderColor="gray.300" _dark={{borderColor: "gray.800"}}>
           <Heading as="h1" size="3xl">Projects</Heading>
         </Box>
         <Box py="12" >

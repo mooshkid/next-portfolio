@@ -4,6 +4,7 @@ import {
   Box,
   Button,
   ButtonGroup,
+  Container,
   Flex,
   useColorMode,
 } from "@chakra-ui/react";
@@ -41,31 +42,33 @@ const NavBar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Box as="header" py="4" maxW="7xl" mx="auto">
-      <Flex justify="space-between" alignItems="center">
-        <Box>
-          <Link href="/">
-            <Image
-              src="https://mooshkid.github.io/assets/slark_icon.png"
-              width="60"
-              height="60"
-              alt="logo"
-            />
-          </Link>
-        </Box>
-        <Flex className="nav_list" gap="4">
-          <Pages />
+    <Container maxW="6xl">
+      <Box as="header" py="4" maxW="7xl" mx="auto">
+        <Flex justify="space-between" alignItems="center">
+          <Box>
+            <Link href="/">
+              <Image
+                src="https://mooshkid.github.io/assets/slark_icon.png"
+                width="60"
+                height="60"
+                alt="logo"
+              />
+            </Link>
+          </Box>
+          <Flex className="nav_list" gap="4">
+            <Pages />
+          </Flex>
+          <ButtonGroup>
+            {/* <Button onClick={toggleColorMode}>
+              Toggle {colorMode === "light" ? "Dark" : "Light"}
+            </Button> */}
+            <Button className="theme_button" onClick={toggleColorMode} mr={2}>
+              {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+            </Button>
+          </ButtonGroup>
         </Flex>
-        <ButtonGroup>
-          {/* <Button onClick={toggleColorMode}>
-            Toggle {colorMode === "light" ? "Dark" : "Light"}
-          </Button> */}
-          <Button className="theme_button" onClick={toggleColorMode} mr={2}>
-            {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-          </Button>
-        </ButtonGroup>
-      </Flex>
-    </Box>
+      </Box>
+    </Container>
   );
 };
 

@@ -1,5 +1,5 @@
 type Skill = {
-  title: string;
+  text: string;
   color: string;
 };
 
@@ -25,10 +25,18 @@ const userData: UserData = {
     ],
 
     skills: [
-      { title: "html", color: "blue" },
-      { title: "css", color: "orange" },
-      { title: "js", color: "yellow" },
-      { title: "python", color: "purple" },
+      { text: "html", color: "blue" },
+      { text: "css", color: "orange" },
+      { text: "js", color: "yellow" },
+      { text: "python", color: "purple" },
+      { text: "html", color: "blue" },
+      { text: "css", color: "orange" },
+      { text: "js", color: "yellow" },
+      { text: "python", color: "purple" },
+      { text: "html", color: "blue" },
+      { text: "css", color: "orange" },
+      { text: "js", color: "yellow" },
+      { text: "python", color: "purple" },
     ],
   },
 };

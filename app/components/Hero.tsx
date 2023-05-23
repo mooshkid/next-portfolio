@@ -38,6 +38,7 @@ function generateLinks() {
       key={index}
       href={item.link}
       target="_blank"
+      locale={false}
       boxShadow={useColorModeValue("0 0 5px #f9cb28", "0 0 5px #007cf0")}
       p="5px 10px"
       borderRadius="5px"

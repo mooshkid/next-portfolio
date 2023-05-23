@@ -21,7 +21,7 @@ const buttons: Button[] = [
   },
   {
     text: "Resume",
-    link: "/Masa_resume.pdf",
+    link: "/Masa_Resume.pdf",
     icon: "DownloadIcon",
   },
 ];

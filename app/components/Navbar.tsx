@@ -1,19 +1,11 @@
-'use client';
+"use client";
 
-import {
-  Box,
-  Button,
-  ButtonGroup,
-  Container,
-  Flex,
-  useColorMode,
-} from "@chakra-ui/react";
+import { Box, Button, ButtonGroup, Container, Flex, useColorMode } from "@chakra-ui/react";
 import Image from "next/image";
 import NextLink from "next/link";
 import { Link } from "@chakra-ui/next-js";
 import React from "react";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
-
 
 type Page = {
   name: string;
@@ -21,16 +13,16 @@ type Page = {
 };
 
 const routes: Page[] = [
-  { name: 'About', path: '/about' },
-  { name: 'Projects', path: '/projects' },
-  { name: 'Contact', path: '/contact' },
+  { name: "About", path: "/about" },
+  { name: "Projects", path: "/projects" },
+  { name: "Contact", path: "/contact" },
 ];
 
 const Pages = () => {
   return (
     <>
       {routes.map((item, index) => (
-        <Link as={NextLink} key={index} href={item.path} _hover={{ textDecoration: "none"}}>
+        <Link as={NextLink} key={index} href={item.path} _hover={{ textDecoration: "none" }}>
           {item.name}
         </Link>
       ))}
@@ -42,8 +34,8 @@ const NavBar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Container maxW="6xl">
-      <Box as="header" py="4" maxW="7xl" mx="auto">
+    <Box as="header" py="4" maxW="7xl" mx="auto">
+      <Container maxW="6xl">
         <Flex justify="space-between" alignItems="center">
           <Box>
             <Link href="/">
@@ -67,8 +59,8 @@ const NavBar = () => {
             </Button>
           </ButtonGroup>
         </Flex>
-      </Box>
-    </Container>
+      </Container>
+    </Box>
   );
 };
 

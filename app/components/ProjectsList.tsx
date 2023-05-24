@@ -19,7 +19,8 @@ function ProjectsList() {
             border="1px"
             borderRadius="5px"
             borderColor="gray.300"
-            _dark={{ borderColor: "gray.800" }}
+            boxShadow="0 25px 50px -12px rgba(0, 0, 0, 0.25)"
+            _dark={{ borderColor: "gray.800", boxShadow: "0 25px 50px -12px rgba(255, 0, 255, 0.25)" }}
             shadow="2xl"
             overflow="hidden"
           >

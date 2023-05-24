@@ -2,6 +2,7 @@ import NavBar from "./components/Navbar";
 import "./styles/scss/main.scss";
 import { Poppins } from "next/font/google";
 import { Providers } from "./providers";
+import Footer from "./components/Footer";
 
 const poppins = Poppins({ weight: '400', subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Providers>
           <NavBar />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>

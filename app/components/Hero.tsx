@@ -7,6 +7,8 @@ import NextLink from "next/link";
 import { Link } from "@chakra-ui/next-js";
 import { DownloadIcon, ExternalLinkIcon } from "@chakra-ui/icons";
 
+
+// move this part to data.ts
 interface Button {
   text: string;
   link: string;

@@ -2,7 +2,6 @@ type Skill = {
   text: string;
   color: string;
 };
-
 type AboutSection = {
   title: string;
   description: string[];
@@ -15,15 +14,25 @@ type Project = {
   url: string;
   img: string;
 };
-
 type ProjectsSection = {
   title: string;
   projects: Project[];
 };
 
+type FooterIcons = {
+  url: string;
+  img: string;
+  alt: string;
+}
+type FooterSection = {
+  icons: FooterIcons[];
+}
+
+
 type UserData = {
   about: AboutSection;
   projects: ProjectsSection;
+  footer: FooterSection;
 };
 
 const userData: UserData = {
@@ -96,6 +105,37 @@ const userData: UserData = {
       },
     ],
   },
+
+  footer: {
+    icons: [
+      {
+        url: "https://github.com/mooshkid/",
+        img: "/lc+_watch.png",
+        alt: "GitHub",
+      },
+      {
+        url: "https://twitter.com/mooshkid",
+        img: "/lc+_watch.png",
+        alt: "Twitter",
+      },
+      {
+        url: "https://youtube.com/",
+        img: "/lc+_watch.png",
+        alt: "YouTube",
+      },
+      {
+        url: "https://google.com/",
+        img: "/lc+_watch.png",
+        alt: "Gmail",
+      },
+      {
+        url: "https://mooshkid.github.io/",
+        img: "/lc+_watch.png",
+        alt: "Coffee",
+      }
+    ]
+  }
+  
 };
 
 export default userData;

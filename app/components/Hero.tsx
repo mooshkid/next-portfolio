@@ -45,7 +45,6 @@ function generateLinks() {
       border="1px"
       borderColor={useColorModeValue("#ff4d4d", "white")}
       _hover={{
-        textDecoration: "none",
         boxShadow: useColorModeValue("0 0 15px #f9cb28", "0 0 15px #007cf0"),
       }}
     >

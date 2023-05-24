@@ -4,6 +4,7 @@ import { Box, Flex, Heading, Stack, Text, Link } from "@chakra-ui/react";
 import Image from "next/image";
 import NextLink from "next/link";
 import userData from "../data/data";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 
 function ProjectsList() {
 
@@ -42,11 +43,11 @@ function ProjectsList() {
                 href={item.url}
                 isExternal
                 color="#de1d8d"
-                _hover={{ textDecoration: "none", color: "white" }}
                 maxW="fit-content"
                 p="2px 4px"
               >
                 Learn more
+                <ChevronRightIcon ml="1" />
               </Link>
             </Stack>
           </Flex>

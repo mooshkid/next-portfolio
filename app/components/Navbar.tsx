@@ -22,7 +22,7 @@ const Pages = () => {
   return (
     <>
       {routes.map((item, index) => (
-        <Link as={NextLink} key={index} href={item.path} _hover={{ textDecoration: "none" }}>
+        <Link as={NextLink} key={index} href={item.path}>
           {item.name}
         </Link>
       ))}

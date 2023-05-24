@@ -9,25 +9,22 @@ type AboutSection = {
   skills: Skill[];
 };
 
-
 type Project = {
   title: string;
   desc: string;
   url: string;
   img: string;
-}
+};
 
 type ProjectsSection = {
   title: string;
   projects: Project[];
-}
-
+};
 
 type UserData = {
   about: AboutSection;
   projects: ProjectsSection;
 };
-
 
 const userData: UserData = {
   about: {
@@ -39,7 +36,6 @@ const userData: UserData = {
       `Whether it's building web applications, experimenting with emerging frameworks, or unraveling complex algorithms, I'm constantly seeking ways to challenge myself and push the boundaries of what's possible.`,
       // `Join me on this exhilarating journey as I continue to expand my skills, connect with fellow developers, and embrace the ever-evolving world of technology. Let's create something amazing together!`,
     ],
-
 
     // from chakra-ui
     // Pass the colorScheme prop to customize the color of the Badge. colorScheme can be any color key that exists in theme.colors
@@ -98,8 +94,8 @@ const userData: UserData = {
         url: "https://mooshkid.github.io/",
         img: "/lc+_watch.png",
       },
-    ]
-  }
+    ],
+  },
 };
 
 export default userData;

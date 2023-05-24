@@ -12,7 +12,7 @@ function ProjectsList() {
   return (
     <>
       {projects.map((item, index) => (
-        <Box key={index} width="50%" p="4">
+        <Box key={index} width={{ base:"100%", md: "50%"}} p="4">
           <Flex
             direction="column"
             border="1px"

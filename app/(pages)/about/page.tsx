@@ -2,7 +2,8 @@
 
 import React from "react";
 import { Badge, Box, Container, Flex, Heading, Text } from "@chakra-ui/react";
-import userData from "../../data/data";
+import userData from '@/app/data/data';
+import Intro from "@/app/components/Intro";
 
 
 
@@ -27,7 +28,7 @@ const about = () => {
   return (
     <main>
       <Container maxW="6xl">
-        <Heading as="h1">{userData.about.title}</Heading>
+        <Intro title={userData.about.title} />
         <Box>
           {userData.about.description?.map((eachLine, index) => {
             return <Text key={index}>{eachLine}</Text>;

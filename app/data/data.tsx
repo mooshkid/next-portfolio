@@ -9,13 +9,29 @@ type AboutSection = {
   skills: Skill[];
 };
 
+
+type Project = {
+  title: string;
+  desc: string;
+  url: string;
+  img: string;
+}
+
+type ProjectsSection = {
+  title: string;
+  projects: Project[];
+}
+
+
 type UserData = {
   about: AboutSection;
+  projects: ProjectsSection;
 };
+
 
 const userData: UserData = {
   about: {
-    title: "my about page title",
+    title: "About",
 
     description: [
       `Hey there! I'm a self-taught developer who is passionate about bringing ideas to life through technology. I'm always on the lookout for the latest innovations and love diving deep into new concepts to see how they can be applied in real-world scenarios`,
@@ -24,6 +40,9 @@ const userData: UserData = {
       // `Join me on this exhilarating journey as I continue to expand my skills, connect with fellow developers, and embrace the ever-evolving world of technology. Let's create something amazing together!`,
     ],
 
+
+    // from chakra-ui
+    // Pass the colorScheme prop to customize the color of the Badge. colorScheme can be any color key that exists in theme.colors
     skills: [
       { text: "html", color: "blue" },
       { text: "css", color: "orange" },
@@ -39,6 +58,48 @@ const userData: UserData = {
       { text: "python", color: "purple" },
     ],
   },
+
+  projects: {
+    title: "Projects",
+    projects: [
+      {
+        title: "My project 1",
+        desc: "some description for my project",
+        url: "https://mooshkid.github.io/",
+        img: "/lc+_watch.png",
+      },
+      {
+        title: "another project",
+        desc: "some description for my project",
+        url: "https://mooshkid.github.io/",
+        img: "/lc+_watch.png",
+      },
+      {
+        title: "third time is the charm",
+        desc: "some description for my project",
+        url: "https://mooshkid.github.io/",
+        img: "/lc+_watch.png",
+      },
+      {
+        title: "is python a snake?",
+        desc: "some description for my project",
+        url: "https://mooshkid.github.io/",
+        img: "/lc+_watch.png",
+      },
+      {
+        title: "5th",
+        desc: "some description for my project",
+        url: "https://mooshkid.github.io/",
+        img: "/lc+_watch.png",
+      },
+      {
+        title: "something unimportant",
+        desc: "some description for my project",
+        url: "https://mooshkid.github.io/",
+        img: "/lc+_watch.png",
+      },
+    ]
+  }
 };
 
 export default userData;

@@ -3,50 +3,15 @@
 import { Box, Flex, Heading, Stack, Text, Link } from "@chakra-ui/react";
 import Image from "next/image";
 import NextLink from "next/link";
-
-const data = [
-  {
-    title: "My Portfolio",
-    desc: "some description for my portfolio",
-    url: "https://mooshkid.github.io/",
-    img: "/lc+_watch.png",
-  },
-  {
-    title: "My Portfolio",
-    desc: "some description for my portfolio",
-    url: "https://mooshkid.github.io/",
-    img: "/lc+_watch.png",
-  },
-  {
-    title: "My Portfolio",
-    desc: "some description for my portfolio",
-    url: "https://mooshkid.github.io/",
-    img: "/lc+_watch.png",
-  },
-  {
-    title: "My Portfolio",
-    desc: "some description for my portfolio",
-    url: "https://mooshkid.github.io/",
-    img: "/lc+_watch.png",
-  },
-  {
-    title: "My Portfolio",
-    desc: "some description for my portfolio",
-    url: "https://mooshkid.github.io/",
-    img: "/lc+_watch.png",
-  },
-  {
-    title: "My Portfolio",
-    desc: "some description for my portfolio",
-    url: "https://mooshkid.github.io/",
-    img: "/lc+_watch.png",
-  },
-];
+import userData from "../data/data";
 
 function ProjectsList() {
+
+  const { projects } = userData.projects;
+  
   return (
     <>
-      {data.map((item, index) => (
+      {projects.map((item, index) => (
         <Box key={index} width="50%" p="4">
           <Flex
             direction="column"

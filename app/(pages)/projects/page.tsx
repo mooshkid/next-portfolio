@@ -1,9 +1,10 @@
 'use client';
 
+import Intro from '@/app/components/Intro';
 import ProjectsList from '@/app/components/ProjectsList';
-import { Box, Container, Flex, Heading } from '@chakra-ui/react'
+import { Box, Container, Flex } from '@chakra-ui/react'
 import React from 'react'
-
+import userData from '@/app/data/data';
 
 
 
@@ -11,9 +12,7 @@ const Projects = () => {
   return (
     <main>
       <Container maxW="6xl" mx="auto">
-        <Box py="8" borderBottom="1px" borderColor="gray.300" _dark={{borderColor: "gray.800"}}>
-          <Heading as="h1" size="3xl">Projects</Heading>
-        </Box>
+        <Intro title={userData.projects.title} />
         <Box py="12" >
           <Flex flexWrap="wrap">
             <ProjectsList />

@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Badge, Box, Container, Flex, Heading, Text } from "@chakra-ui/react";
+import { Badge, Box, Container, Flex, Stack, Text } from "@chakra-ui/react";
 import userData from '@/app/data/data';
 import Intro from "@/app/components/Intro";
 
@@ -29,12 +29,14 @@ const about = () => {
     <main>
       <Container maxW="6xl">
         <Intro title={userData.about.title} />
-        <Box>
-          {userData.about.description?.map((eachLine, index) => {
-            return <Text key={index}>{eachLine}</Text>;
-          })}
-        </Box>
-        <Badges />
+        <Stack direction="column" spacing="8" py="8">
+          <Box>
+            {userData.about.description?.map((eachLine, index) => {
+              return <Text key={index}>{eachLine}</Text>;
+            })}
+          </Box>
+          <Badges />
+        </Stack>
       </Container>
     </main>
   );

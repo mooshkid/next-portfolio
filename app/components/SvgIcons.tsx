@@ -8,7 +8,7 @@ interface SvgIconsProps {
 
 const SvgIcons: FC<SvgIconsProps> = ({ fill, d, viewBox }) => {
   return (
-    <svg width="auto" height="24" viewBox={viewBox}>
+    <svg width="auto" height="32" viewBox={viewBox}>
       <path fill={fill} d={d}></path>
     </svg>
   )

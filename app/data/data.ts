@@ -71,22 +71,23 @@ const userData: UserData = {
     title: "Projects",
     projects: [
       {
-        title: "My project 1",
-        desc: "some description for my project",
-        url: "https://mooshkid.github.io/",
-        img: "/lc+_watch.png",
+        title: "LC+ Website",
+        desc: "Custom WordPress child theme",
+        // url: "https://lc-plus.net/",
+        url: "",
+        img: "/lc_plus.png", // update image after logo color change
       },
       {
-        title: "another project",
-        desc: "some description for my project",
-        url: "https://mooshkid.github.io/",
-        img: "/lc+_watch.png",
+        title: "Mortgage Calculator",
+        desc: "Practice project using create-react-app, mui and chart.js",
+        url: "https://mooshkid.github.io/mortgage-calculator",
+        img: "/mortgage.png",
       },
       {
-        title: "third time is the charm",
-        desc: "some description for my project",
-        url: "https://mooshkid.github.io/",
-        img: "/lc+_watch.png",
+        title: "Weather App",
+        desc: "Simple weather app that uses openweathermap.org API to display the weather details",
+        url: "https://mooshkid.github.io/weather-app/",
+        img: "/weather_app.png",
       },
       {
         title: "is python a snake?",

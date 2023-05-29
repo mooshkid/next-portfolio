@@ -30,11 +30,9 @@ const about = () => {
       <Container maxW="6xl">
         <Intro title={userData.about.title} />
         <Stack direction="column" spacing="8" py="8">
-          <Box>
             {userData.about.description?.map((eachLine, index) => {
               return <Text key={index}>{eachLine}</Text>;
             })}
-          </Box>
           <Badges />
         </Stack>
       </Container>

@@ -79,7 +79,7 @@ const userData: UserData = {
       },
       {
         title: "Mortgage Calculator",
-        desc: "Practice project using create-react-app, mui and chart.js",
+        desc: "Practice project developed with create-react-app, mui and chart.js",
         url: "https://mooshkid.github.io/mortgage-calculator",
         img: "/mortgage.png",
       },
@@ -90,19 +90,19 @@ const userData: UserData = {
         img: "/weather_app.png",
       },
       {
+        title: "My Portfolio #1",
+        desc: "My first portfolio project with a mobile-first responsive design.",
+        url: "https://mooshkid.github.io/",
+        img: "/portfolio.png",
+      },
+      {
+        title: "Little Garden Website",
+        desc: "Mobile-first custom WordPress theme that I built from scratch",
+        url: "https://littlegarden-inter.com/",
+        img: "/littlegarden_inter.png",
+      },
+      {
         title: "is python a snake?",
-        desc: "some description for my project",
-        url: "https://mooshkid.github.io/",
-        img: "/lc+_watch.png",
-      },
-      {
-        title: "5th",
-        desc: "some description for my project",
-        url: "https://mooshkid.github.io/",
-        img: "/lc+_watch.png",
-      },
-      {
-        title: "something unimportant",
         desc: "some description for my project",
         url: "https://mooshkid.github.io/",
         img: "/lc+_watch.png",

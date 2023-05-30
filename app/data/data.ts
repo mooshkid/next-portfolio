@@ -78,8 +78,7 @@ const userData: UserData = {
         title: "LC+ Website",
         desc: "Custom WordPress child theme",
         slug: "lcplus",
-        // url: "https://lc-plus.net/",
-        url: "",
+        url: "https://lc-plus.net/",
         img: "/lc_plus.png", // update image after logo color change
         badges: ["Php", "JavaScript", "SCSS", "WordPress"]
       },

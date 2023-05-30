@@ -1,27 +1,10 @@
 "use client";
 
 import React from "react";
-import { Badge, Box, Container, Flex, Stack, Text } from "@chakra-ui/react";
+import { Container, Flex, Stack, Text } from "@chakra-ui/react";
 import userData from '@/app/data/data';
 import Intro from "@/app/components/Intro";
-
-
-
-// badges
-const Badges = () => {
-  return (
-    <Flex gap="2" wrap="wrap">
-    {userData.about.skills?.map((badge, index) => {
-      return (
-        <Badge key={index} colorScheme={badge.color}>
-          {badge.text}
-        </Badge>
-      )
-    })}
-    </Flex>
-  )
-}
-
+import BadgeList from "@/app/components/BadgeList";
 
 
 const about = () => {
@@ -33,7 +16,7 @@ const about = () => {
             {userData.about.description?.map((eachLine, index) => {
               return <Text key={index}>{eachLine}</Text>;
             })}
-          <Badges />
+          <BadgeList badges={userData.about.skills} />
         </Stack>
       </Container>
     </main>

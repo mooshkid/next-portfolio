@@ -1,11 +1,7 @@
-type Skill = {
-  text: string;
-  color: string;
-};
 type AboutSection = {
   title: string;
   description: string[];
-  skills: Skill[];
+  skills: string[];
 };
 
 type Project = {
@@ -14,11 +10,17 @@ type Project = {
   desc: string;
   url: string;
   img: string;
+  badges: string[];
 };
 type ProjectsSection = {
   title: string;
   projects: Project[];
 };
+
+type ContactSection = {
+  title: string;
+  description: string;
+}
 
 type FooterIcons = {
   url: string;
@@ -36,6 +38,7 @@ type FooterSection = {
 type UserData = {
   about: AboutSection;
   projects: ProjectsSection;
+  contact: ContactSection;
   footer: FooterSection;
 };
 
@@ -52,20 +55,20 @@ const userData: UserData = {
 
     // from chakra-ui
     // Pass the colorScheme prop to customize the color of the Badge. colorScheme can be any color key that exists in theme.colors
-    skills: [
-      { text: "html", color: "blue" },
-      { text: "css", color: "orange" },
-      { text: "js", color: "yellow" },
-      { text: "python", color: "purple" },
-      { text: "html", color: "blue" },
-      { text: "css", color: "orange" },
-      { text: "js", color: "yellow" },
-      { text: "python", color: "purple" },
-      { text: "html", color: "blue" },
-      { text: "css", color: "orange" },
-      { text: "js", color: "yellow" },
-      { text: "python", color: "purple" },
-    ],
+    // skills: [
+    //   { text: "React", color: "teal.200" },
+    //   { text: "Next.js", color: "gray.800" },
+    //   { text: "JavaScript", color: "orange.200" },
+    //   { text: "TypeScipt", color: "blue.500" },
+    //   { text: "SCSS", color: "red.400" },
+    //   { text: "Php", color: "purple.200" },
+    //   { text: "WordPress", color: "teal.500" },
+    //   { text: "Html", color: "cyan.400" },
+    //   { text: "Css", color: "pink.300" },
+    //   { text: "Python", color: "blue.700" },
+    //   { text: "Figma", color: "yellow.300" },
+    // ],
+    skills: ["React", "Next.js", "JavaScript", "TypeScipt", "SCSS", "PHP", "WordPress", "Html", "Css", "Python", "Figma"]
   },
 
   projects: {
@@ -78,6 +81,7 @@ const userData: UserData = {
         // url: "https://lc-plus.net/",
         url: "",
         img: "/lc_plus.png", // update image after logo color change
+        badges: ["Php", "JavaScript", "SCSS", "WordPress"]
       },
       {
         title: "Mortgage Calculator",
@@ -85,6 +89,7 @@ const userData: UserData = {
         slug: "mortgage",
         url: "https://mooshkid.github.io/mortgage-calculator",
         img: "/mortgage.png",
+        badges: ["React", "MUI", "Chart.js"]
       },
       {
         title: "Weather App",
@@ -92,6 +97,7 @@ const userData: UserData = {
         slug: "weather",
         url: "https://mooshkid.github.io/weather-app/",
         img: "/weather_app.png",
+        badges: ["JavaScript", "Html", "Css"]
       },
       {
         title: "My Portfolio #1",
@@ -99,6 +105,7 @@ const userData: UserData = {
         slug: "portfolio",
         url: "https://mooshkid.github.io/",
         img: "/portfolio.png",
+        badges: ["JavaScript", "GSAP", "Html", "SCSS"]
       },
       {
         title: "Little Garden Website",
@@ -106,6 +113,7 @@ const userData: UserData = {
         slug: "littlegarden",
         url: "https://littlegarden-inter.com/",
         img: "/littlegarden_inter.png",
+        badges: ["Php", "JavaScript", "SCSS", "WordPress"]
       },
       {
         title: "is python a snake?",
@@ -113,8 +121,14 @@ const userData: UserData = {
         slug: "python",
         url: "https://mooshkid.github.io/",
         img: "/lc+_watch.png",
+        badges: ["a", "b", "c"]
       },
     ],
+  },
+  
+  contact: {
+    title: "Contact",
+    description: "Feel free to hit me up <3"
   },
 
   footer: {
@@ -156,7 +170,7 @@ const userData: UserData = {
         alt: "Buy Me A Coffee",
       }
     ]
-  }
+  },
   
 };
 

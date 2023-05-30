@@ -61,7 +61,7 @@ function generateLinks() {
 const Hero = () => {
   return (
     <Container maxW={"7xl"} mx={"auto"}>
-      <Stack id="hero" minH={{ md: "70vh" }} justify={"center"}>
+      <Stack id="hero" minH={{ md: "70vh" }} justify={"center"} mb="8">
         <Flex
           align={"center"}
           justify={"center"}

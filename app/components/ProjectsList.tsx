@@ -41,8 +41,8 @@ function ProjectsList() {
               </Text>
               <Link
                 as={NextLink}
-                href={item.url}
-                isExternal
+                href={`/projects/${item.slug}`}
+                // isExternal
                 color="#de1d8d"
                 maxW="fit-content"
                 p="2px 4px"

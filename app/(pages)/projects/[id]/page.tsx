@@ -27,7 +27,6 @@ export default function Page({ params }: { params: { id: string } }) {
     <>
       <main>
         <div>
-          <p>{id}</p>
           <p>{title}</p>
           <p>{desc}</p>
         </div>

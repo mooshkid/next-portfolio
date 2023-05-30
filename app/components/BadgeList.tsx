@@ -10,23 +10,22 @@ interface BadgeListProps {
 
 const BadgeList: React.FC<BadgeListProps> = ({ badges }) => {
   const badgeColors: Record<string, string> = {
-    React: "teal.200",
-    Nextjs: "gray.800",
-    JavaScript: "orange.200",
-    TypeScript: "blue.500",
-    SCSS: "red.400",
-    Php: "purple.200",
-    WordPress: "teal.500",
-    Html: "cyan.400",
-    Css: "pink.300",
-    Python: "blue.700",
-    Figma: "yellow.300",
+    React: "teal",
+    Nextjs: "gray",
+    JavaScript: "orange",
+    TypeScript: "blue",
+    SCSS: "red",
+    Php: "purple",
+    WordPress: "teal",
+    Html: "cyan",
+    Css: "pink",
+    Python: "blue",
   };
 
   return (
     <Flex gap="2" wrap="wrap">
       {badges.map((badge, index) => (
-        <Badge key={index} colorScheme={badgeColors[badge] || "red.500"}>
+        <Badge key={index} colorScheme={badgeColors[badge] || "red"}>
           {badge}
         </Badge>
       ))}

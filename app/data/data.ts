@@ -68,7 +68,7 @@ const userData: UserData = {
     //   { text: "Python", color: "blue.700" },
     //   { text: "Figma", color: "yellow.300" },
     // ],
-    skills: ["React", "Next.js", "JavaScript", "TypeScipt", "SCSS", "PHP", "WordPress", "Html", "Css", "Python", "Figma"]
+    skills: ["React", "Nextjs", "JavaScript", "TypeScript", "SCSS", "Php", "WordPress", "Html", "Css", "Python",]
   },
 
   projects: {

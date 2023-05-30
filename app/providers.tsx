@@ -29,10 +29,15 @@ const theme = extendTheme({
     Link: {
       baseStyle: {
         _hover: {
-          textDecoration: 'none',
+          textDecoration: "none",
         },
       },
     },
+    Badge: {
+      baseStyle: {
+        textTransform: "none",
+      },
+    }
   },
 });
 

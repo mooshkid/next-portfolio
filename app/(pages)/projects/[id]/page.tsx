@@ -39,7 +39,7 @@ export default function Page({ params }: { params: { id: string } }) {
             <Heading as="h1">{title}</Heading>
             <Text color="blackAlpha.600" _dark={{ color: "whiteAlpha.600" }}>{desc}</Text>
             <BadgeList badges={badges} />
-            <Link as={NextLink} href={url} p="2px 4px" color="#de1d8d">
+            <Link as={NextLink} href={url} p="2px 4px" color="#de1d8d" isExternal>
               web
               <ExternalLinkIcon ml="2" />
             </Link>

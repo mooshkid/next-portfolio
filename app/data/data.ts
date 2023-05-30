@@ -10,6 +10,7 @@ type AboutSection = {
 
 type Project = {
   title: string;
+  slug: string;
   desc: string;
   url: string;
   img: string;
@@ -73,6 +74,7 @@ const userData: UserData = {
       {
         title: "LC+ Website",
         desc: "Custom WordPress child theme",
+        slug: "lcplus",
         // url: "https://lc-plus.net/",
         url: "",
         img: "/lc_plus.png", // update image after logo color change
@@ -80,30 +82,35 @@ const userData: UserData = {
       {
         title: "Mortgage Calculator",
         desc: "Practice project developed with create-react-app, mui and chart.js",
+        slug: "mortgage",
         url: "https://mooshkid.github.io/mortgage-calculator",
         img: "/mortgage.png",
       },
       {
         title: "Weather App",
         desc: "Simple weather app that uses openweathermap.org API to display the weather details",
+        slug: "weather",
         url: "https://mooshkid.github.io/weather-app/",
         img: "/weather_app.png",
       },
       {
         title: "My Portfolio #1",
         desc: "My first portfolio project with a mobile-first responsive design.",
+        slug: "portfolio",
         url: "https://mooshkid.github.io/",
         img: "/portfolio.png",
       },
       {
         title: "Little Garden Website",
         desc: "Mobile-first custom WordPress theme that I built from scratch",
+        slug: "littlegarden",
         url: "https://littlegarden-inter.com/",
         img: "/littlegarden_inter.png",
       },
       {
         title: "is python a snake?",
         desc: "some description for my project",
+        slug: "python",
         url: "https://mooshkid.github.io/",
         img: "/lc+_watch.png",
       },

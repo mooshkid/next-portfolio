@@ -121,7 +121,7 @@ const userData: UserData = {
         slug: "python",
         url: "https://mooshkid.github.io/",
         img: "/lc+_watch.png",
-        badges: ["a", "b", "c"]
+        badges: ["a", "b", "c", "d"]
       },
     ],
   },

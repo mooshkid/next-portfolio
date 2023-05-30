@@ -2,12 +2,10 @@
 
 import { notFound } from "next/navigation";
 import projectData from "@/app/data/data";
-import { Container, Heading, Stack, Text } from "@chakra-ui/react";
+import { Container, Heading, Stack, Text, Link } from "@chakra-ui/react";
 import NextLink from "next/link";
-import { Link } from "@chakra-ui/next-js";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import BadgeList from "@/app/components/BadgeList";
-
 
 const projects = projectData.projects.projects;
 
@@ -37,7 +35,9 @@ export default function Page({ params }: { params: { id: string } }) {
         <Container maxW="6xl" mx="auto">
           <Stack direction="column" spacing="4">
             <Heading as="h1">{title}</Heading>
-            <Text color="blackAlpha.600" _dark={{ color: "whiteAlpha.600" }}>{desc}</Text>
+            <Text color="blackAlpha.600" _dark={{ color: "whiteAlpha.600" }}>
+              {desc}
+            </Text>
             <BadgeList badges={badges} />
             <Link as={NextLink} href={url} p="2px 4px" color="#de1d8d" isExternal>
               web

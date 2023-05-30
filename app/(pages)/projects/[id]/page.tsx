@@ -6,7 +6,6 @@ import { Container, Heading, Stack, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { Link } from "@chakra-ui/next-js";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
-import Badges from "@/app/components/Badges";
 import BadgeList from "@/app/components/BadgeList";
 
 

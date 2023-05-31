@@ -74,8 +74,8 @@ const userData: UserData = {
         desc: "My second portfolio to showcase my projects and resume. It all began when I wanted to create a new simple portfolio with just a dark/light theme. But then one thing lead to another... began with React and Chakra UI... then came TypeScript... and finally Next.js(Pages), which I ended up migrating it to App Router with the release of Next.js 13.4",
         slug: "next-portfolio",
         url: "https://next-portfolio-mooshkid.vercel.app/",
-        img: "/lc+_watch.png",
-        badges: ["React", "Next.js", "Chakra UI", "TypeScript"],
+        img: "/portfolio_next.png",
+        badges: ["React", "Nextjs", "ChakraUI", "TypeScript"],
       },
 
       {
@@ -84,7 +84,7 @@ const userData: UserData = {
         slug: "mortgage",
         url: "https://mooshkid.github.io/mortgage-calculator",
         img: "/mortgage.png",
-        badges: ["React", "MUI", "Chart.js"],
+        badges: ["React", "MUI", "Chartjs"],
       },
       {
         title: "Weather App",

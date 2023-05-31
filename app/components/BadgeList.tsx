@@ -22,6 +22,10 @@ const BadgeList: React.FC<BadgeListProps> = ({ badges }) => {
     Html: "cyan",
     Css: "pink",
     Python: "blue",
+    GSAP: "green",
+    MUI: "purple",
+    Chartjs: "pink",
+    ChakraUI: "yellow",
   };
 
   return (

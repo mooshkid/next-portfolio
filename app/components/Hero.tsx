@@ -1,61 +1,26 @@
 "use client";
 
-import React from "react";
-import Image from "next/image";
-import { Container, Flex, Heading, Stack, Text, useColorModeValue } from "@chakra-ui/react";
-import NextLink from "next/link";
-import { Link } from "@chakra-ui/next-js";
 import { DownloadIcon, ExternalLinkIcon } from "@chakra-ui/icons";
+import { Container, Flex, Heading, Stack, Text, useColorModeValue } from "@chakra-ui/react";
+import Image from "next/image";
+import MyButton from "./MyButton";
 
 
-interface Button {
-  text: string;
-  link: string;
-  icon: keyof typeof icons;
-}
 
-const buttons: Button[] = [
+const buttons = [
   {
     text: "GitHub",
     link: "https://github.com/mooshkid/",
-    icon: "ExternalLinkIcon",
+    icon: <ExternalLinkIcon />,
+    external: true,
   },
   {
     text: "Resume",
     link: "/Masa_Resume.pdf",
-    icon: "DownloadIcon",
-  },
+    icon: <DownloadIcon />,
+    external: true,
+  }
 ];
-
-const icons = {
-  ExternalLinkIcon: <ExternalLinkIcon />,
-  DownloadIcon: <DownloadIcon />,
-};
-
-function generateLinks() {
-  return buttons.map((item, index) => (
-    <Link
-      as={NextLink}
-      key={index}
-      href={item.link}
-      target="_blank"
-      locale={false}
-      boxShadow={useColorModeValue("0 0 5px #f9cb28", "0 0 5px #007cf0")}
-      p="5px 10px"
-      borderRadius="5px"
-      border="1px"
-      borderColor={useColorModeValue("#ff4d4d", "white")}
-      _hover={{
-        boxShadow: useColorModeValue("0 0 15px #f9cb28", "0 0 15px #007cf0"),
-      }}
-    >
-      <Flex gap="2" alignItems="center">
-        {item.text}
-        {icons[item.icon]}
-      </Flex>
-    </Link>
-  ));
-}
 
 
 const Hero = () => {
@@ -92,7 +57,8 @@ const Hero = () => {
             </Heading>
             <Text fontSize="2xl">Front-end Developer</Text>
             <Stack direction="row" spacing="4">
-              {generateLinks()}
+              <MyButton text={buttons[0].text} link={buttons[0].link} icon={buttons[0].icon} external={buttons[0].external} />
+              <MyButton text={buttons[1].text} link={buttons[1].link} icon={buttons[1].icon} external={buttons[1].external} />
             </Stack>
           </Stack>
         </Flex>

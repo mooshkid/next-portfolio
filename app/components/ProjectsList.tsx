@@ -36,7 +36,7 @@ function ProjectsList() {
             </Box>
             <Stack direction="column" spacing="4" p="4">
               <Heading as="h3">{item.title}</Heading>
-              <Text color="blackAlpha.600" _dark={{ color: "whiteAlpha.600" }}>
+              <Text color="blackAlpha.600" _dark={{ color: "whiteAlpha.600" }} noOfLines={2}>
                 {item.desc}
               </Text>
               <Link

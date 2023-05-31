@@ -20,7 +20,7 @@ type ProjectsSection = {
 type ContactSection = {
   title: string;
   description: string;
-}
+};
 
 type FooterIcons = {
   url: string;
@@ -29,11 +29,10 @@ type FooterIcons = {
   fill: string;
   dark?: string;
   alt: string;
-}
+};
 type FooterSection = {
   icons: FooterIcons[];
-}
-
+};
 
 type UserData = {
   about: AboutSection;
@@ -53,58 +52,55 @@ const userData: UserData = {
       // `Join me on this exhilarating journey as I continue to expand my skills, connect with fellow developers, and embrace the ever-evolving world of technology. Let's create something amazing together!`,
     ],
 
-    // from chakra-ui
-    // Pass the colorScheme prop to customize the color of the Badge. colorScheme can be any color key that exists in theme.colors
-    // skills: [
-    //   { text: "React", color: "teal.200" },
-    //   { text: "Next.js", color: "gray.800" },
-    //   { text: "JavaScript", color: "orange.200" },
-    //   { text: "TypeScipt", color: "blue.500" },
-    //   { text: "SCSS", color: "red.400" },
-    //   { text: "Php", color: "purple.200" },
-    //   { text: "WordPress", color: "teal.500" },
-    //   { text: "Html", color: "cyan.400" },
-    //   { text: "Css", color: "pink.300" },
-    //   { text: "Python", color: "blue.700" },
-    //   { text: "Figma", color: "yellow.300" },
-    // ],
-    skills: ["React", "Nextjs", "JavaScript", "TypeScript", "SCSS", "Php", "WordPress", "Html", "Css", "Python",]
+    skills: [
+      "React",
+      "Nextjs",
+      "JavaScript",
+      "TypeScript",
+      "SCSS",
+      "Php",
+      "WordPress",
+      "Html",
+      "Css",
+      "Python",
+    ],
   },
 
   projects: {
     title: "Projects",
     projects: [
       {
-        title: "LC+ Website",
-        desc: "Custom WordPress child theme",
-        slug: "lcplus",
-        url: "https://lc-plus.net/",
-        img: "/lc_plus.png", // update image after logo color change
-        badges: ["Php", "JavaScript", "SCSS", "WordPress"]
+        title: "This website",
+        desc: "My second portfolio to showcase my projects and resume. It all began when I wanted to create a new simple portfolio with just a dark/light theme. But then one thing lead to another... began with React and Chakra UI... then came TypeScript... and finally Next.js(Pages), which I ended up migrating it to App Router with the release of Next.js 13.4",
+        slug: "next-portfolio",
+        url: "https://next-portfolio-mooshkid.vercel.app/",
+        img: "/lc+_watch.png",
+        badges: ["React", "Next.js", "Chakra UI", "TypeScript"],
       },
+
       {
         title: "Mortgage Calculator",
-        desc: "Practice project developed with create-react-app, mui and chart.js",
+        desc: "Practice project developed with create-react-app, MUI and Chart.js. This was my first react project and my first step towards learning react. I mostly followed the online tutorial with a few tweaks here and there, learning the fundamentals of react, including components, passing props as well as destructuring.",
         slug: "mortgage",
         url: "https://mooshkid.github.io/mortgage-calculator",
         img: "/mortgage.png",
-        badges: ["React", "MUI", "Chart.js"]
+        badges: ["React", "MUI", "Chart.js"],
       },
       {
         title: "Weather App",
-        desc: "Simple weather app that uses openweathermap.org API to display the weather details",
+        desc: "Simple weather app that uses openweathermap.org API to display the weather details. I wanted to learn more about APIs and how to I could use and integrate it in to web apps, when I came across a javascript tutorial that did just that! I learend how to use javascript to fetch an api and then use that json data to update the user interface.",
         slug: "weather",
         url: "https://mooshkid.github.io/weather-app/",
         img: "/weather_app.png",
-        badges: ["JavaScript", "Html", "Css"]
+        badges: ["JavaScript", "Html", "Css"],
       },
       {
-        title: "My Portfolio #1",
-        desc: "My first portfolio project with a mobile-first responsive design.",
-        slug: "portfolio",
-        url: "https://mooshkid.github.io/",
-        img: "/portfolio.png",
-        badges: ["JavaScript", "GSAP", "Html", "SCSS"]
+        title: "LC+ Website",
+        desc: "Website for the advertising department for LC-JAPAN. This website was built with the purpose of promoting and extend our servcies to new clients. It's a child theme of Arkhe  ",
+        slug: "lcplus",
+        url: "https://lc-plus.net/",
+        img: "/lc_plus.png", // update image after logo color change
+        badges: ["Php", "JavaScript", "SCSS", "GSAP", "WordPress"],
       },
       {
         title: "Little Garden Website",
@@ -112,22 +108,23 @@ const userData: UserData = {
         slug: "littlegarden",
         url: "https://littlegarden-inter.com/",
         img: "/littlegarden_inter.png",
-        badges: ["Php", "JavaScript", "SCSS", "WordPress"]
+        badges: ["Php", "JavaScript", "SCSS", "WordPress"],
       },
+
       {
-        title: "is python a snake?",
-        desc: "some description for my project",
-        slug: "python",
+        title: "My Portfolio #1",
+        desc: "My first portfolio project with a mobile-first responsive design.",
+        slug: "portfolio",
         url: "https://mooshkid.github.io/",
-        img: "/lc+_watch.png",
-        badges: ["a", "b", "c", "d"]
+        img: "/portfolio.png",
+        badges: ["JavaScript", "GSAP", "Html", "SCSS"],
       },
     ],
   },
-  
+
   contact: {
     title: "Contact",
-    description: "Feel free to hit me up <3"
+    description: "Feel free to hit me up <3",
   },
 
   footer: {
@@ -167,10 +164,9 @@ const userData: UserData = {
         viewBox: "0 0 24 24",
         fill: "#ffdd00",
         alt: "Buy Me A Coffee",
-      }
-    ]
+      },
+    ],
   },
-  
 };
 
 export default userData;

@@ -1,13 +1,15 @@
 "use client";
 
 import { Badge, Flex } from "@chakra-ui/react";
-import React from 'react'
-
+import React from "react";
 
 interface BadgeListProps {
   badges: string[];
 }
 
+
+// from chakra-ui
+// Pass the colorScheme prop to customize the color of the Badge. colorScheme can be any color key that exists in theme.colors
 const BadgeList: React.FC<BadgeListProps> = ({ badges }) => {
   const badgeColors: Record<string, string> = {
     React: "teal",

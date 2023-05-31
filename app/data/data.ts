@@ -96,7 +96,7 @@ const userData: UserData = {
       },
       {
         title: "LC+ Website",
-        desc: "Website for the advertising department for LC-JAPAN. This website was built with the purpose of promoting and extend our servcies to new clients. It's a child theme of Arkhe  ",
+        desc: "Website for the advertising department for LC-JAPAN. This website was built with the purpose of promoting and extending the servcies to new clients. It's a child theme of Arkhe. I've also added additional javascript libraries, GSAP and swiper.js for animations and sliders respectively",
         slug: "lcplus",
         url: "https://lc-plus.net/",
         img: "/lc_plus.png", // update image after logo color change
@@ -104,7 +104,7 @@ const userData: UserData = {
       },
       {
         title: "Little Garden Website",
-        desc: "Mobile-first custom WordPress theme that I built from scratch",
+        desc: "Mobile-first custom WordPress theme that I built from scratch. This was my first time attempting to build a custom theme from scratch. It was very challenging but exciting and a rewarding project overall. I learned how to create custom post types and taxonomies. I used the ACF plugin to create custom fields so that the client can easily update their own content which required frequent updates. Also, created an instruction guide on how to create new blog/news.",
         slug: "littlegarden",
         url: "https://littlegarden-inter.com/",
         img: "/littlegarden_inter.png",
@@ -113,7 +113,7 @@ const userData: UserData = {
 
       {
         title: "My Portfolio #1",
-        desc: "My first portfolio project with a mobile-first responsive design.",
+        desc: "My first portfolio project with a mobile-first responsive design. Nothing particularly special lol. It was pretty much a site to test out and practice new skills which I aquired, such as: creating hamburger menus, simple JavaScript DOM manipulation, creating SCSS mixins, functions and color maps.",
         slug: "portfolio",
         url: "https://mooshkid.github.io/",
         img: "/portfolio.png",

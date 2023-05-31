@@ -34,7 +34,7 @@ export default function Page({ params }: { params: { id: string } }) {
     <>
       <main>
         <Container maxW="6xl" mx="auto">
-          <Stack direction="column" spacing="4">
+          <Stack direction="column" spacing="8">
             <Heading as="h1">{title}</Heading>
             <Text color="blackAlpha.800" _dark={{ color: "whiteAlpha.800" }}>
               {desc}

@@ -14,7 +14,6 @@ type Project = {
   buttons?: {
     text: string;
     link: string;
-    icon?: string;
   }[];
 };
 type ProjectsSection = {
@@ -82,7 +81,7 @@ const userData: UserData = {
         img: "/portfolio_next.png",
         badges: ["React", "Nextjs", "ChakraUI", "TypeScript"],
         buttons: [
-          { text: "Website", link: "https://next-portfolio-mooshkid.vercel.app", icon: "download" },
+          { text: "Website", link: "https://next-portfolio-mooshkid.vercel.app" },
           { text: "GitHub", link: "https://github.com/mooshkid/next-portfolio" },
         ],
       },

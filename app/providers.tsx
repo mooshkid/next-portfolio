@@ -41,7 +41,6 @@ const theme = extendTheme({
   },
 });
 
-// const theme = extendTheme({ config, styles })
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (

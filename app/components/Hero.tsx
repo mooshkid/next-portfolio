@@ -6,7 +6,6 @@ import Image from "next/image";
 import MyButtons from "./MyButtons";
 
 
-
 const buttons = [
   {
     text: "GitHub",
@@ -55,8 +54,6 @@ const Hero = () => {
             </Heading>
             <Text fontSize="2xl">Front-end Developer</Text>
             <Stack direction="row" spacing="4">
-              {/* <MyButton text={buttons[0].text} link={buttons[0].link} icon={buttons[0].icon} external={buttons[0].external} />
-              <MyButton text={buttons[1].text} link={buttons[1].link} icon={buttons[1].icon} external={buttons[1].external} /> */}
               <MyButtons buttons={buttons} />
             </Stack>
           </Stack>

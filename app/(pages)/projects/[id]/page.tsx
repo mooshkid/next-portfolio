@@ -31,18 +31,13 @@ export default function Page({ params }: { params: { id: string } }) {
 
   const { title, desc, url, badges, img, buttons} = project;
 
-  // const buttons = [
-  //   { text: "webbb", link: "https://github.com/"},
-  //   { text: "webbb", link: "https://github.com/"},
-  //   { text: "webbb", link: "https://github.com/"}
-  // ]
   
   return (
     <>
       <main>
         <Container maxW="6xl" mx="auto">
-          <Stack direction="column" spacing="8">
-            <Heading as="h1" mt="8">{title}</Heading>
+          <Stack direction="column" spacing="8" pb="12">
+            <Heading as="h1">{title}</Heading>
             <Text color="blackAlpha.800" _dark={{ color: "whiteAlpha.800" }}>
               {desc}
             </Text>

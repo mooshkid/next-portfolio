@@ -94,7 +94,7 @@ const userData: UserData = {
         img: "/mortgage.png",
         badges: ["React", "MUI", "Chartjs"],
         buttons: [
-          { text: "Web", link: "https://mooshkid.github.io/mortgage-calculator" },
+          { text: "App", link: "https://mooshkid.github.io/mortgage-calculator" },
           { text: "GitHub", link: "https://github.com/mooshkid/mortgage-calculator" },
         ],
       },
@@ -106,7 +106,7 @@ const userData: UserData = {
         img: "/weather_app.png",
         badges: ["JavaScript", "Html", "Css"],
         buttons: [
-          { text: "Web", link: "https://mooshkid.github.io/weather-app" },
+          { text: "App", link: "https://mooshkid.github.io/weather-app" },
           { text: "GitHub", link: "https://github.com/mooshkid/weather-app" },
         ],
       },

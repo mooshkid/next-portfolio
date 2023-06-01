@@ -3,13 +3,14 @@
 import { DownloadIcon, ExternalLinkIcon, LinkIcon } from "@chakra-ui/icons";
 import { Flex, Link, Stack } from "@chakra-ui/react";
 import NextLink from "next/link";
+import { ReactNode } from "react";
 
 
 interface MyButtonProps {
   buttons?: {
     text: string;
     link?: string;
-    icon?: "download" | "external";
+    icon?: ReactNode;
   }[];
 }
 

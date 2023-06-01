@@ -7,6 +7,7 @@ import NextLink from "next/link";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import BadgeList from "@/app/components/BadgeList";
 import Image from "next/image";
+import MyButtons from "@/app/components/MyButtons";
 
 const projects = userData.projects.projects;
 
@@ -28,22 +29,29 @@ export default function Page({ params }: { params: { id: string } }) {
     notFound();
   }
 
-  const { title, desc, url, badges, img } = project;
+  const { title, desc, url, badges, img, buttons} = project;
 
+  // const buttons = [
+  //   { text: "webbb", link: "https://github.com/"},
+  //   { text: "webbb", link: "https://github.com/"},
+  //   { text: "webbb", link: "https://github.com/"}
+  // ]
+  
   return (
     <>
       <main>
         <Container maxW="6xl" mx="auto">
           <Stack direction="column" spacing="8">
-            <Heading as="h1">{title}</Heading>
+            <Heading as="h1" mt="8">{title}</Heading>
             <Text color="blackAlpha.800" _dark={{ color: "whiteAlpha.800" }}>
               {desc}
             </Text>
             <BadgeList badges={badges} />
-            <Link as={NextLink} href={url} p="2px 4px" color="#de1d8d" isExternal>
+            <MyButtons buttons={buttons} />
+            {/* <Link as={NextLink} href={url} p="2px 4px" color="#de1d8d" isExternal>
               web
               <ExternalLinkIcon ml="2" />
-            </Link>
+            </Link> */}
             <Box
               position="relative"
               width={{ md: "50%" }}

@@ -3,7 +3,7 @@
 import { DownloadIcon, ExternalLinkIcon } from "@chakra-ui/icons";
 import { Container, Flex, Heading, Stack, Text, useColorModeValue } from "@chakra-ui/react";
 import Image from "next/image";
-import MyButton from "./MyButton";
+import MyButtons from "./MyButtons";
 
 
 
@@ -12,13 +12,11 @@ const buttons = [
     text: "GitHub",
     link: "https://github.com/mooshkid/",
     icon: <ExternalLinkIcon />,
-    external: true,
   },
   {
     text: "Resume",
     link: "/Masa_Resume.pdf",
     icon: <DownloadIcon />,
-    external: true,
   }
 ];
 
@@ -57,8 +55,9 @@ const Hero = () => {
             </Heading>
             <Text fontSize="2xl">Front-end Developer</Text>
             <Stack direction="row" spacing="4">
-              <MyButton text={buttons[0].text} link={buttons[0].link} icon={buttons[0].icon} external={buttons[0].external} />
-              <MyButton text={buttons[1].text} link={buttons[1].link} icon={buttons[1].icon} external={buttons[1].external} />
+              {/* <MyButton text={buttons[0].text} link={buttons[0].link} icon={buttons[0].icon} external={buttons[0].external} />
+              <MyButton text={buttons[1].text} link={buttons[1].link} icon={buttons[1].icon} external={buttons[1].external} /> */}
+              <MyButtons buttons={buttons} />
             </Stack>
           </Stack>
         </Flex>

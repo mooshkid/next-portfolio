@@ -31,7 +31,7 @@ const BadgeList: React.FC<BadgeListProps> = ({ badges }) => {
   return (
     <Flex gap="2" wrap="wrap">
       {badges.map((badge, index) => (
-        <Badge key={index} colorScheme={badgeColors[badge] || "white"}>
+        <Badge key={index} colorScheme={badgeColors[badge] || "white"} fontSize="0.9em">
           {badge}
         </Badge>
       ))}

@@ -8,9 +8,13 @@ type Project = {
   title: string;
   slug: string;
   desc: string;
-  url: string;
+  url?: string;
   img: string;
   badges: string[];
+  buttons?: {
+    text: string;
+    link: string;
+  }[];
 };
 type ProjectsSection = {
   title: string;
@@ -76,6 +80,10 @@ const userData: UserData = {
         url: "https://next-portfolio-mooshkid.vercel.app/",
         img: "/portfolio_next.png",
         badges: ["React", "Nextjs", "ChakraUI", "TypeScript"],
+        buttons: [
+          { text: "Website", link: "https://next-portfolio-mooshkid.vercel.app" },
+          { text: "GitHub", link: "https://github.com/mooshkid/next-portfolio" },
+        ],
       },
 
       {
@@ -85,6 +93,10 @@ const userData: UserData = {
         url: "https://mooshkid.github.io/mortgage-calculator",
         img: "/mortgage.png",
         badges: ["React", "MUI", "Chartjs"],
+        buttons: [
+          { text: "Web", link: "https://mooshkid.github.io/mortgage-calculator" },
+          { text: "GitHub", link: "https://github.com/mooshkid/mortgage-calculator" },
+        ],
       },
       {
         title: "Weather App",
@@ -93,14 +105,22 @@ const userData: UserData = {
         url: "https://mooshkid.github.io/weather-app/",
         img: "/weather_app.png",
         badges: ["JavaScript", "Html", "Css"],
+        buttons: [
+          { text: "Web", link: "https://mooshkid.github.io/weather-app" },
+          { text: "GitHub", link: "https://github.com/mooshkid/weather-app" },
+        ],
       },
       {
-        title: "LC+ Website",
-        desc: "Website for the advertising department for LC-JAPAN. This website was built with the purpose of promoting and extending the servcies to new clients. It's a child theme of Arkhe. I've also added additional javascript libraries, GSAP and swiper.js for animations and sliders respectively",
+        title: "LC+ Website (WIP)",
+        desc: "This is my current project, a website for the advertising department for LC-JAPAN. This website is being built with the purpose of promoting and extending the servcies to new clients. It's a child theme of Arkhe. I've also added additional javascript libraries, GSAP and swiper.js for animations and sliders respectively",
         slug: "lcplus",
-        url: "https://lc-plus.net/",
+        // url: "https://lc-plus.net/",
         img: "/lc_plus.png", // update image after logo color change
         badges: ["Php", "JavaScript", "SCSS", "GSAP", "WordPress"],
+        buttons: [
+          // { text: "Website", link: "https://lc-plus.net" },
+          // { text: "GitHub", link: "https://github.com/" },
+        ],
       },
       {
         title: "Little Garden Website",
@@ -109,6 +129,7 @@ const userData: UserData = {
         url: "https://littlegarden-inter.com/",
         img: "/littlegarden_inter.png",
         badges: ["Php", "JavaScript", "SCSS", "WordPress"],
+        buttons: [{ text: "Website", link: "https://littlegarden-inter.com" }],
       },
 
       {
@@ -118,6 +139,10 @@ const userData: UserData = {
         url: "https://mooshkid.github.io/",
         img: "/portfolio.png",
         badges: ["JavaScript", "GSAP", "Html", "SCSS"],
+        buttons: [
+          { text: "Website", link: "https://mooshkid.github.io" },
+          { text: "GitHub", link: "https://github.com/mooshkid/mooshkid.github.io" },
+        ],
       },
     ],
   },

@@ -4,7 +4,7 @@ type AboutSection = {
   skills: string[];
 };
 
-export type Project = {
+type Project = {
   title: string;
   slug: string;
   desc: string;
@@ -14,6 +14,7 @@ export type Project = {
   buttons?: {
     text: string;
     link: string;
+    icon?: string;
   }[];
 };
 type ProjectsSection = {
@@ -81,7 +82,7 @@ const userData: UserData = {
         img: "/portfolio_next.png",
         badges: ["React", "Nextjs", "ChakraUI", "TypeScript"],
         buttons: [
-          { text: "Website", link: "https://next-portfolio-mooshkid.vercel.app" },
+          { text: "Website", link: "https://next-portfolio-mooshkid.vercel.app", icon: "external" },
           { text: "GitHub", link: "https://github.com/mooshkid/next-portfolio" },
         ],
       },

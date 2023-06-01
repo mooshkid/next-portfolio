@@ -1,16 +1,25 @@
 "use client";
 
-import { LinkIcon } from "@chakra-ui/icons";
+import { DownloadIcon, ExternalLinkIcon, LinkIcon } from "@chakra-ui/icons";
 import { Flex, Link, Stack } from "@chakra-ui/react";
 import NextLink from "next/link";
-import { Project } from "../data/data";
 
 
 interface MyButtonProps {
-  buttons?: Project["buttons"];
+  buttons?: {
+    text: string;
+    link?: string;
+    icon?: "download" | "external";
+  }[];
 }
 
 const MyButtons = ({ buttons }: MyButtonProps) => {
+
+  const iconChakra = {
+    download: <DownloadIcon />,
+    external: <ExternalLinkIcon />,
+  }
+
   if (!buttons) {
     return null; // Return null if buttons prop is undefined
   }
@@ -42,7 +51,7 @@ const MyButtons = ({ buttons }: MyButtonProps) => {
             >
               <Flex gap="2" alignItems="center">
                 {item.text}
-                {item.icon || <LinkIcon />}
+                {item.icon && iconChakra[item.icon] || <LinkIcon />}
               </Flex>
             </Link>
           );

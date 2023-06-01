@@ -4,7 +4,7 @@ type AboutSection = {
   skills: string[];
 };
 
-type Project = {
+export type Project = {
   title: string;
   slug: string;
   desc: string;

@@ -3,8 +3,14 @@
 import { LinkIcon } from "@chakra-ui/icons";
 import { Flex, Link, Stack } from "@chakra-ui/react";
 import NextLink from "next/link";
+import { Project } from "../data/data";
 
-const MyButtons = ({ buttons }) => {
+
+interface MyButtonProps {
+  buttons?: Project["buttons"];
+}
+
+const MyButtons = ({ buttons }: MyButtonProps) => {
   if (!buttons) {
     return null; // Return null if buttons prop is undefined
   }

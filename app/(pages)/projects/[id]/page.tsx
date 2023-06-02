@@ -8,6 +8,7 @@ import { ExternalLinkIcon } from "@chakra-ui/icons";
 import BadgeList from "@/app/components/BadgeList";
 import Image from "next/image";
 import MyButtons from "@/app/components/MyButtons";
+import ProjectSlider, { SliderApp } from "@/app/components/ProjectSlider";
 
 const projects = userData.projects.projects;
 
@@ -70,8 +71,11 @@ export default function Page({ params }: { params: { id: string } }) {
                 sizes="100vw"
                 style={{ width: "100%", height: "auto" }}
               />
+              <ProjectSlider />
             </Box>
           </Stack>
+              <SliderApp />
+
         </Container>
       </main>
     </>

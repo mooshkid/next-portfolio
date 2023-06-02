@@ -43,9 +43,16 @@ function ProjectsList() {
                 as={NextLink}
                 href={`/projects/${item.slug}`}
                 // isExternal
-                color="#de1d8d"
                 maxW="fit-content"
                 p="2px 4px"
+                color="rgb(228, 65, 172)"
+                _hover={{ color: "rgb(222, 29, 141)"}}
+                _dark={{
+                  color: "rgb(222, 29, 141)",
+                  _hover: {
+                    color: "rgb(228, 65, 172)"
+                  }
+                }}
               >
                 Learn more
                 <ChevronRightIcon ml="1" />

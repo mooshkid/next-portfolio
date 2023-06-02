@@ -149,7 +149,7 @@ const userData: UserData = {
 
   contact: {
     title: "Contact",
-    description: "Feel free to hit me up <3",
+    description: "Feel free to hit me up on any of my socials <3",
   },
 
   footer: {

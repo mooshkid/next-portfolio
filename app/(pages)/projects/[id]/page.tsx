@@ -1,14 +1,12 @@
 "use client"; // does this go here? or should i move the generateStaticParams???
 
-import { notFound } from "next/navigation";
-import userData from "@/app/data/data";
-import { Container, Heading, Stack, Text, Link, Box } from "@chakra-ui/react";
-import NextLink from "next/link";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
 import BadgeList from "@/app/components/BadgeList";
-import Image from "next/image";
 import MyButtons from "@/app/components/MyButtons";
-import ProjectSlider, { SliderApp } from "@/app/components/ProjectSlider";
+import ProjectSlider from "@/app/components/ProjectSlider";
+import userData from "@/app/data/data";
+import { Box, Container, Heading, Stack, Text } from "@chakra-ui/react";
+import Image from "next/image";
+import { notFound } from "next/navigation";
 
 const projects = userData.projects.projects;
 
@@ -30,9 +28,8 @@ export default function Page({ params }: { params: { id: string } }) {
     notFound();
   }
 
-  const { title, desc, url, badges, img, buttons} = project;
+  const { title, desc, url, badges, img, buttons } = project;
 
-  
   return (
     <>
       <main>
@@ -48,7 +45,7 @@ export default function Page({ params }: { params: { id: string } }) {
               web
               <ExternalLinkIcon ml="2" />
             </Link> */}
-            <Box
+            {/* <Box
               position="relative"
               width={{ md: "50%" }}
               height={"100%"}
@@ -71,11 +68,11 @@ export default function Page({ params }: { params: { id: string } }) {
                 sizes="100vw"
                 style={{ width: "100%", height: "auto" }}
               />
+            </Box> */}
+            <Box width={{ md: "70%" }}>
               <ProjectSlider />
             </Box>
           </Stack>
-              <SliderApp />
-
         </Container>
       </main>
     </>

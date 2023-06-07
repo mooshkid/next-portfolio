@@ -41,7 +41,7 @@ const ProjectSlider = () => {
             height={0}
             sizes="100vw"
             style={{ width: "100%", height: "auto" }}
-            src="/littlegarden_slider1.png"
+            src="/sample_slider.png"
           />
         </SwiperSlide>
         <SwiperSlide style={{width: "70%"}}>
@@ -51,7 +51,7 @@ const ProjectSlider = () => {
             height={0}
             sizes="100vw"
             style={{ width: "100%", height: "auto" }}
-            src="/littlegarden_slider1.png"
+            src="/sample_slider.png"
           />
         </SwiperSlide>
         <SwiperSlide style={{width: "70%"}}>
@@ -61,7 +61,7 @@ const ProjectSlider = () => {
             height={0}
             sizes="100vw"
             style={{ width: "100%", height: "auto" }}
-            src="/littlegarden_slider1.png"
+            src="/sample_slider.png"
           />
         </SwiperSlide>
         <SwiperSlide style={{width: "70%"}}>
@@ -71,7 +71,7 @@ const ProjectSlider = () => {
             height={0}
             sizes="100vw"
             style={{ width: "100%", height: "auto" }}
-            src="/littlegarden_slider1.png"
+            src="/sample_slider.png"
           />
         </SwiperSlide>
         <SwiperSlide style={{width: "70%"}}>
@@ -81,7 +81,7 @@ const ProjectSlider = () => {
             height={0}
             sizes="100vw"
             style={{ width: "100%", height: "auto" }}
-            src="/littlegarden_slider1.png"
+            src="/sample_slider.png"
           />
         </SwiperSlide>
       </Swiper>

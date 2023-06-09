@@ -70,6 +70,7 @@ export default function Page({ params }: { params: { id: string } }) {
               />
             </Box> */}
             <Box width={{ md: "70%" }}>
+              <Text as="h2" size="3xl" fontWeight="700" mb="4">Screenshots</Text>
               <ProjectSlider />
             </Box>
           </Stack>

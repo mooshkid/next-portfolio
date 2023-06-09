@@ -27,8 +27,8 @@ const about = () => {
                 shadow="2xl"
               >
                 <Image
-                  src="/masa.png"
-                  alt="a"
+                  src={userData.about.photo}
+                  alt="masa" // add alt to data later
                   width={0}
                   height={0}
                   sizes="100vw"

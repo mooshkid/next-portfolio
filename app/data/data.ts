@@ -1,5 +1,6 @@
 type AboutSection = {
   title: string;
+  photo: string;
   description: string[];
   skills: string[];
 };
@@ -48,7 +49,7 @@ type UserData = {
 const userData: UserData = {
   about: {
     title: "About",
-
+    photo: "/masa.png",
     description: [
       `Hey there! I'm a self-taught developer who is passionate about bringing ideas to life through technology. I'm always on the lookout for the latest innovations and love diving deep into new concepts to see how they can be applied in real-world scenarios`,
       `When I'm not coding, you'll find me fueled by curiosity, eagerly exploring new technologies and tinkering with side projects. I thrive on the excitement of learning something new and the satisfaction of turning that knowledge into practical solutions.`,

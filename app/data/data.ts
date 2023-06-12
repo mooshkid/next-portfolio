@@ -16,6 +16,7 @@ type Project = {
     text: string;
     link: string;
   }[];
+  screenshots?: string[];
 };
 type ProjectsSection = {
   title: string;
@@ -131,6 +132,12 @@ const userData: UserData = {
         img: "/littlegarden_inter.png",
         badges: ["Php", "JavaScript", "SCSS", "WordPress"],
         buttons: [{ text: "Website", link: "https://littlegarden-inter.com" }],
+        screenshots: [
+          "/littlegarden_slider1.png",
+          "/littlegarden_slider2.png",
+          "/littlegarden_slider3.png",
+          "/littlegarden_inter.png",
+        ]
       },
 
       {
@@ -144,6 +151,13 @@ const userData: UserData = {
           { text: "Website", link: "https://mooshkid.github.io" },
           { text: "GitHub", link: "https://github.com/mooshkid/mooshkid.github.io" },
         ],
+        screenshots: [
+          // "/portfolio_slider1.png",
+          "/portfolio_slider2.png",
+          "/portfolio_slider3.png",
+          "/portfolio.png",
+          "/portfolio3.png",
+        ]
       },
     ],
   },

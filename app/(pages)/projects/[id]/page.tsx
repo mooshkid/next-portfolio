@@ -5,7 +5,6 @@ import MyButtons from "@/app/components/MyButtons";
 import ProjectSlider from "@/app/components/ProjectSlider";
 import userData from "@/app/data/data";
 import { Box, Container, Heading, Stack, Text } from "@chakra-ui/react";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 
 const projects = userData.projects.projects;
@@ -28,7 +27,7 @@ export default function Page({ params }: { params: { id: string } }) {
     notFound();
   }
 
-  const { title, desc, url, badges, img, buttons } = project;
+  const { title, desc, badges, buttons, screenshots } = project; // just defactoring for simplicity
 
   return (
     <>
@@ -41,37 +40,15 @@ export default function Page({ params }: { params: { id: string } }) {
             </Text>
             <BadgeList badges={badges} />
             <MyButtons buttons={buttons} />
-            {/* <Link as={NextLink} href={url} p="2px 4px" color="#de1d8d" isExternal>
-              web
-              <ExternalLinkIcon ml="2" />
-            </Link> */}
-            {/* <Box
-              position="relative"
-              width={{ md: "50%" }}
-              height={"100%"}
-              border="1px"
-              borderRadius="5px"
-              borderColor="gray.300"
-              boxShadow="0 25px 50px -12px rgba(0, 0, 0, 0.25)"
-              _dark={{
-                borderColor: "gray.800",
-                boxShadow: "0 25px 50px -12px rgba(255, 0, 255, 0.25)",
-              }}
-              shadow="2xl"
-              overflow="hidden"
-            >
-              <Image
-                src={img}
-                alt={title}
-                width={0}
-                height={0}
-                sizes="100vw"
-                style={{ width: "100%", height: "auto" }}
-              />
-            </Box> */}
             <Box width={{ md: "70%" }}>
-              <Text as="h2" size="3xl" fontWeight="700" mb="4">Screenshots</Text>
-              <ProjectSlider />
+              {screenshots && ( // only show if there are screenshots
+                <>
+                  <Text as="h2" size="3xl" fontWeight="700" mb="4">
+                    Screenshots
+                  </Text>
+                  <ProjectSlider sliders={screenshots} />
+                </>
+              )}
             </Box>
           </Stack>
         </Container>

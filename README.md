@@ -1,3 +1,15 @@
+<p align="start">
+  <a href=""><img alt="" src="https://img.shields.io/github/last-commit/mooshkid/next-portfolio" /></a>
+  <a href=""><img alt="" src="https://img.shields.io/github/directory-file-count/mooshkid/next-portfolio" /></a>
+  <a href=""><img alt="" src="https://img.shields.io/github/repo-size/mooshkid/next-portfolio" /></a>
+</p>
+
+# My Next.js Portfolio
+My 2nd portfolio, tryingout Next.js 13.4 (App router), typescript and Chakra UI.
+
+Live project at [https://next-portfolio-mooshkid.vercel.app]
+
+
 ## npx create-next-app settings
 ```
 √ Would you like to use TypeScript with this project? ... Yes

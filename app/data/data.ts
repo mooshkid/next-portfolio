@@ -113,16 +113,23 @@ const userData: UserData = {
         ],
       },
       {
-        title: "LC+ Website (WIP)",
-        desc: "This is my current project, a website for the advertising department for LC-JAPAN. This website is being built with the purpose of promoting and extending the servcies to new clients. It's a child theme of Arkhe. I've also added additional javascript libraries, GSAP and swiper.js for animations and sliders respectively",
+        title: "LC PLUS Website",
+        desc: "This is my latest project, a website for the advertising department for LC-JAPAN. This website was built with the purpose of promoting and extending the servcies to new clients. It's a customized child theme, built on the freemium theme - Arkhe. I used GSAP and swiper.js for animations and sliders respectively. I wanted to play and test out many different animations, so I used GSAP to create timelines, typewriter effects, scrolltriggers... etc.",
         slug: "lcplus",
-        // url: "https://lc-plus.net/",
+        url: "https://lc-plus.net/",
         img: "/lc_plus.png", // update image after logo color change
         badges: ["Php", "JavaScript", "SCSS", "GSAP", "WordPress"],
         buttons: [
-          // { text: "Website", link: "https://lc-plus.net" },
+          { text: "Website", link: "https://lc-plus.net" },
           // { text: "GitHub", link: "https://github.com/" },
         ],
+        screenshots: [
+          // "/lc_plus_monitor.png",
+          "/lc_plus_watch.png",
+          "/lc_plus.png",
+          "/lc_plus_watch.png",
+          "/lc_plus.png",
+        ]
       },
       {
         title: "Little Garden Website",

@@ -83,8 +83,14 @@ const userData: UserData = {
         img: "/portfolio_next.png",
         badges: ["React", "Nextjs", "ChakraUI", "TypeScript"],
         buttons: [
-          { text: "Website", link: "https://next-portfolio-mooshkid.vercel.app" },
-          { text: "GitHub", link: "https://github.com/mooshkid/next-portfolio" },
+          {
+            text: "Website",
+            link: "https://next-portfolio-mooshkid.vercel.app",
+          },
+          {
+            text: "GitHub",
+            link: "https://github.com/mooshkid/next-portfolio",
+          },
         ],
       },
 
@@ -96,8 +102,14 @@ const userData: UserData = {
         img: "/mortgage.png",
         badges: ["React", "MUI", "Chartjs"],
         buttons: [
-          { text: "App", link: "https://mooshkid.github.io/mortgage-calculator" },
-          { text: "GitHub", link: "https://github.com/mooshkid/mortgage-calculator" },
+          {
+            text: "App",
+            link: "https://mooshkid.github.io/mortgage-calculator",
+          },
+          {
+            text: "GitHub",
+            link: "https://github.com/mooshkid/mortgage-calculator",
+          },
         ],
       },
       {
@@ -125,11 +137,11 @@ const userData: UserData = {
         ],
         screenshots: [
           // "/lc_plus_monitor.png",
-          "/lc_plus_watch.png",
-          "/lc_plus.png",
-          "/lc_plus_watch.png",
-          "/lc_plus.png",
-        ]
+          "/lc_plus2.png",
+          "/lc_plus3.png",
+          "/lc_plus4.png",
+          "/lc_plus5.png",
+        ],
       },
       {
         title: "Little Garden Website",
@@ -144,7 +156,7 @@ const userData: UserData = {
           "/littlegarden_slider2.png",
           "/littlegarden_slider3.png",
           "/littlegarden_inter.png",
-        ]
+        ],
       },
 
       {
@@ -156,7 +168,10 @@ const userData: UserData = {
         badges: ["JavaScript", "GSAP", "Html", "SCSS"],
         buttons: [
           { text: "Website", link: "https://mooshkid.github.io" },
-          { text: "GitHub", link: "https://github.com/mooshkid/mooshkid.github.io" },
+          {
+            text: "GitHub",
+            link: "https://github.com/mooshkid/mooshkid.github.io",
+          },
         ],
         screenshots: [
           // "/portfolio_slider1.png",
@@ -164,7 +179,7 @@ const userData: UserData = {
           "/portfolio_slider3.png",
           "/portfolio.png",
           "/portfolio3.png",
-        ]
+        ],
       },
     ],
   },

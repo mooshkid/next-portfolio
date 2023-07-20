@@ -129,7 +129,7 @@ const userData: UserData = {
         desc: "This is my latest project, a website for the advertising department for LC-JAPAN. This website was built with the purpose of promoting and extending the servcies to new clients. It's a customized child theme, built on the freemium theme - Arkhe. I used GSAP and swiper.js for animations and sliders respectively. I wanted to play and test out many different animations, so I used GSAP to create timelines, typewriter effects, scrolltriggers... etc.",
         slug: "lcplus",
         url: "https://lc-plus.net/",
-        img: "/lc_plus.png", // update image after logo color change
+        img: "/lc_plus2.png",
         badges: ["Php", "JavaScript", "SCSS", "GSAP", "WordPress"],
         buttons: [
           { text: "Website", link: "https://lc-plus.net" },

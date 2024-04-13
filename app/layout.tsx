@@ -4,7 +4,7 @@ import { Poppins } from "next/font/google";
 import { Providers } from "./providers";
 import Footer from "./components/Footer";
 
-const poppins = Poppins({ weight: '400', subsets: ["latin"] });
+const poppins = Poppins({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
   title: "Masa's Next.js Portfolio",
@@ -13,8 +13,8 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={poppins.className}>
+    <html lang='en' suppressHydrationWarning>
+      <body className={poppins.className} suppressHydrationWarning>
         <Providers>
           <NavBar />
           {children}

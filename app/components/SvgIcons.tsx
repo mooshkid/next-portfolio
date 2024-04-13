@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
 interface SvgIconsProps {
   fill: string;
@@ -8,10 +8,10 @@ interface SvgIconsProps {
 
 const SvgIcons: FC<SvgIconsProps> = ({ fill, d, viewBox }) => {
   return (
-    <svg width="auto" height="32" viewBox={viewBox}>
+    <svg width='32' height='32' viewBox={viewBox}>
       <path fill={fill} d={d}></path>
     </svg>
-  )
+  );
 };
 
 export default SvgIcons;

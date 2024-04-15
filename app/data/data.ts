@@ -25,7 +25,7 @@ type ProjectsSection = {
 
 type ContactSection = {
   title: string;
-  description: string;
+  description: string[];
 };
 
 type FooterIcons = {
@@ -170,7 +170,7 @@ const userData: UserData = {
 
   contact: {
     title: "Contact",
-    description: "Feel free to hit me up on any of my socials <3",
+    description: [`Feel free to hit me up on any of my socials, `, `or fill out the form below <3`],
   },
 
   footer: {
